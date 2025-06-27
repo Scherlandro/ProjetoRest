@@ -1,0 +1,98 @@
+<body class="mat-body">
+<nav class="toolbar" role="banner">
+
+  <form *ngIf="mostrarMenu">
+
+   <a  mat-button=""  routerLink="/page_usuarios" >
+    <span class="mat-button-wrapper ">Usuarios</span></a>
+
+  <a mat-button="" routerLink="/clientes">
+    <span class="mat-background-warn">Clientes</span>
+  </a>
+
+  <!--
+  <a  mat-button=""  [routerLink]="['user-demo',idUsuario.value]" >
+    <span class="mat-button-wrapper ">Id do Usuario</span></a>
+-->
+  <a  mat-button=""  routerLink="/produtos" >
+    <span class="mat-button-wrapper ">Produtos</span></a>
+
+  <a  mat-button=""  routerLink="/vendas" >
+    <span class="mat-button-wrapper ">Vendas</span></a>
+
+ <a  mat-button=""  routerLink="/busca" >
+    <span class="mat-button-wrapper ">Buscas</span></a>
+
+
+  </form>
+
+  <li routerLinkActive="active"><a  mat-button=""  routerLink="" >
+    <span class="mat-button-wrapper ">Home</span></a> </li>
+
+   <a class="card" target="_blank" rel="noopener" mat-button=""
+      href="http://scherlandro.blogspot.com/" >
+    <span class="mat-button-wrapper ">MEU BLOGSPOT</span></a>
+
+  <ul ></ul>
+
+  <a  mat-button=""  routerLink="/login" >
+    <span class="mat-button-wrapper ">Login</span></a>
+
+
+</nav>
+
+
+<div class="content" role="main">
+
+  <span>{{ title }} app is running!</span>
+
+
+</div>
+<!--
+<div class="card-container">
+<label>Codigo do usuario</label>
+<input class="mat-input-element" #idUsuario>
+</div>
+-->
+
+
+
+<form class="mat-form-field-autofill-control">
+
+  <mat-card class="mat-card-custom">
+    <router-outlet ></router-outlet>
+  </mat-card>
+
+</form>
+
+
+
+
+
+  <!-- Footer -->
+  <footer  class="mat-form-field-autofill-control"  >
+
+
+    <div class="card-container">
+
+      <a class="card" target="_blank" rel="noopener" href="https://material.angular.io/components">
+        <span>ComponentMaterial</span>
+      </a>
+
+
+      <a class="card" target="_blank" rel="noopener" href="https://jwt.io/">
+        <span>Depurador de TOKEN</span>
+     </a>
+
+
+    </div>
+
+
+
+  </footer>
+
+
+</body>
+
+
+
